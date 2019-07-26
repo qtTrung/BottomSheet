@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jilnesta.com.testbottomsheet.MultiSheetView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:parentTag="android.support.design.widget.CoordinatorLayout">
+
+    <FrameLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/sheet1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:behavior_peekHeight="64dp"
+        app:layout_behavior="jilnesta.com.testbottomsheet.CustomBottomSheetBehavior"
+        tools:ignore="MissingPrefix">
+
+        <FrameLayout
+            android:id="@+id/sheet1Container"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorAccent" />
+
+    </FrameLayout>
+
+</jilnesta.com.testbottomsheet.MultiSheetView>
